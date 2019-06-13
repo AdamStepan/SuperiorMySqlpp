@@ -1026,7 +1026,7 @@ namespace SuperiorMySqlpp { namespace LowLevel
          * @param characterSetName Character set name.
          * @throws MysqlInternalError When any error occurred during changing the charset.
          */
-        void setCharacterSet(char* characterSetName)
+        void setCharacterSet(const char* characterSetName)
         {
             if (mysql_set_character_set(getMysqlPtr(), characterSetName))
             {
