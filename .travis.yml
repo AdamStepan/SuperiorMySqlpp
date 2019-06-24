@@ -9,4 +9,5 @@ branches:
 script:
   - make CONCURRENCY=4 package-debian-stretch-dbuild
   - make CONCURRENCY=4 package-debian-jessie-dbuild
+  - make CONCURRENCY=4 package-debian-buster-dbuild
   - make CONCURRENCY=4 package-fedora-22-dbuild
